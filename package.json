@@ -1,0 +1,31 @@
+{
+    "name": "transfer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run nodemon",
+        "build": "npm run build",
+        "nodemon": "nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bson": "^1.0.9",
+        "ethers": "^5.0.24",
+        "form-data": "^3.0.0",
+        "js-md5": "0.7.3",
+        "koa": "^2.11.0",
+        "koa-body": "^4.1.1",
+        "koa-log4": "^2.3.2",
+        "koa-router": "^8.0.8",
+        "moment": "^2.27.0",
+        "mongodb": "^3.5.5",
+        "monk": "^7.1.2",
+        "node-rsa": "^1.0.8"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
