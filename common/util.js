@@ -175,6 +175,7 @@ module.exports = {
             data = {};
         }
 
+        logger.info("http ", method, " " + url);
         try {
             let res = await axios({ method, url, data });
             if (res.status === 200) {
