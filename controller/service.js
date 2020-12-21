@@ -30,8 +30,9 @@ class Service {
         sort = util.checkIfEmptyAndSetDefault(sort, "aes");
 
         if (type == "1") {
-            let url = "https://api.etherscan.io/api?module=account";
+            let url = "https://api.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "tokentx",
                 contractaddress: config.USDT_CONTACT_ADDRESS,
                 address,
@@ -56,8 +57,9 @@ class Service {
                 logger.info("getTransions error: ", e.toString());
             }
         } else {
-            let url = "https://api-rinkeby.etherscan.io/api?module=account";
+            let url = "https://api-rinkeby.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "tokentx",
                 contractaddress,
                 address,
@@ -100,8 +102,9 @@ class Service {
         contractaddress = util.checkIfEmptyAndSetDefault(contractaddress, config.TEST_USDT_CONTACT_ADDRESS);
         
         if (type == "1") {
-            let url = "https://api.etherscan.io/api?module=account";
+            let url = "https://api.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "tokenbalance",
                 tag: "latest",
                 contractaddress: config.USDT_CONTACT_ADDRESS,
@@ -122,8 +125,9 @@ class Service {
                 logger.info("getTokenBalance error: ", e.toString());
             }
         } else {
-            let url = "https://api-rinkeby.etherscan.io/api?module=account";
+            let url = "https://api-rinkeby.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "tokenbalance",
                 contractaddress: contractaddress,
                 tag: "latest",
@@ -161,8 +165,9 @@ class Service {
         }
         
         if (type == "1") {
-            let url = "https://api.etherscan.io/api?module=account";
+            let url = "https://api.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "balance",
                 tag: "latest",
                 address,
@@ -182,8 +187,9 @@ class Service {
                 logger.info("getTokenBalance error: ", e.toString());
             }
         } else {
-            let url = "https://api-rinkeby.etherscan.io/api?module=account";
+            let url = "https://api-rinkeby.etherscan.io/api";
             let params = {
+                module: "account",
                 action: "balance",
                 tag: "latest",
                 address,
