@@ -49,7 +49,7 @@ class Service {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTransions response: ", JSON.stringify(response));
                 if (response) {
-                    ctx.body = JSON.stringify(response);
+                    ctx.body = response;
                     return;
                 }
 
@@ -76,7 +76,7 @@ class Service {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTransions response: ", JSON.stringify(response))
                 if (response) {
-                    ctx.body = JSON.stringify(response);
+                    ctx.body = response;
                     return;
                 } else {
                     logger.info("getTransions error");
@@ -117,7 +117,7 @@ class Service {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTokenBalance response: ", JSON.stringify(response));
                 if (response) {
-                    ctx.body = JSON.stringify(response);
+                    ctx.body = response;
                     return;
                 }
 
