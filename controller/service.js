@@ -43,7 +43,7 @@ class Service {
                 endblock: 999999999
             };
             logger.info("getTransions url: ", url)
-            logger.info("getTransions params: ", params.toString())
+            logger.info("getTransions params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTransions response: ", JSON.stringify(response));
@@ -69,7 +69,7 @@ class Service {
                 endblock: 999999999
             };
             logger.info("getTransions url: ", url)
-            logger.info("getTransions params: ", params.toString())
+            logger.info("getTransions params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTransions response: ", JSON.stringify(response))
@@ -109,7 +109,7 @@ class Service {
                 apikey: config.ETHERSCAN_API_KEY
             };
             logger.info("getTokenBalance url: ", url)
-            logger.info("getTokenBalance params: ", params.toString())
+            logger.info("getTokenBalance params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTokenBalance response: ", JSON.stringify(response));
@@ -131,7 +131,7 @@ class Service {
                 apikey: config.ETHERSCAN_API_KEY
             };
             logger.info("getTokenBalance url: ", url)
-            logger.info("getTokenBalance params: ", params.toString())
+            logger.info("getTokenBalance params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getTokenBalance response: ", JSON.stringify(response));
@@ -169,7 +169,7 @@ class Service {
                 apikey: config.ETHERSCAN_API_KEY
             };
             logger.info("getEthBalance url: ", url)
-            logger.info("getEthBalance params: ", params.toString())
+            logger.info("getEthBalance params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getEthBalance response: ", JSON.stringify(response));
@@ -190,7 +190,7 @@ class Service {
                 apikey: config.ETHERSCAN_API_KEY
             };
             logger.info("getEthBalance url: ", url)
-            logger.info("getEthBalance params: ", params.toString())
+            logger.info("getEthBalance params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
                 logger.info("getEthBalance response: ", JSON.stringify(response))
