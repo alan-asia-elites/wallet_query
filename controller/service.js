@@ -47,7 +47,6 @@ class Service {
             logger.info("getTransions params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
-                logger.info("getTransions response: ", JSON.stringify(response));
                 if (response) {
                     ctx.body = JSON.stringify(response);
                     return;
@@ -74,7 +73,6 @@ class Service {
             logger.info("getTransions params: ", JSON.stringify(params))
             try {
                 let response = await util.curl(url, "get", params);
-                logger.info("getTransions response: ", JSON.stringify(response))
                 if (response) {
                     ctx.body = JSON.stringify(response);
                     return;
